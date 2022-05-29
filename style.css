@@ -1,0 +1,348 @@
+*{
+    box-sizing: border-box;
+    margin: 0 0;
+}
+html,
+body{
+    margin: 0;
+    padding: 0;
+}
+p,button{
+    font-family: 'Open Sans', sans-serif;
+    color: hsl(192, 100%, 9%);
+}
+h1,h2,
+h3,h4{
+    font-family: 'Poppins', sans-serif;
+    color: hsl(192, 100%, 9%);
+}
+
+.nav-logo{
+    width: 130px;
+    margin: 5px 10px;
+}
+
+.nav-button{
+    float: right;
+    margin: 5px 10px;
+    padding: 5px 20px;
+    background-color: transparent;
+    border: 1.5px solid hsl(322, 100%, 66%);
+    color: hsl(322, 100%, 66%);
+    border-radius: 20px;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.intro{
+    padding-top: 50px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro h2{
+    font-weight: 700;
+    font-size: 30px;
+    
+}
+
+.intro p{
+    width: 500px;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.pink-button{
+    background-color: hsl(322, 100%, 66%);
+    border: none;
+    padding: 12px 50px;
+    border-radius: 20px;
+    color: white;
+    margin: 20px 0;
+    font-weight: 600;
+}
+
+.pink-button:hover{
+    background-color: rgba(255, 82, 191, 0.7);
+    cursor: pointer;
+}
+
+#s-mockup{
+    width: min(90vw, 1000px);
+    margin-top: 60px;
+}
+
+.icon{
+    width: 30px;
+}
+
+.main-container{
+    display: grid;
+    grid-auto-columns: 1fr 1fr;
+    grid-template-areas: 
+    'one two'
+    'three three'
+    'four five'
+    'six six'
+    'seven eight'
+    'nine nine'
+    'ten eleven'
+    'twelve twelve'
+    'thirteen thirteen'
+    'fourteen fourteen'
+    'fiveteen sixteen';
+}
+
+
+div:nth-child(1){
+    grid-area: one;
+}
+div:nth-child(2){
+    grid-area: two;
+}
+
+div:nth-child(3){
+    grid-area: three;
+}
+
+div:nth-child(4){
+    grid-area: five;
+}
+div:nth-child(5){
+    grid-area: four;
+}
+div:nth-child(6){
+    grid-area: six;
+}
+
+div:nth-child(7){
+    grid-area: seven;
+}
+div:nth-child(8){
+    grid-area: eight;
+}
+div:nth-child(9){
+    grid-area: nine;
+}
+div:nth-child(10){
+    grid-area: eleven;
+}
+div:nth-child(11){
+    grid-area: ten;
+}
+div:nth-child(12){
+    grid-area: twelve;
+}
+div:nth-child(13){
+    grid-area: thirteen;
+}
+div:nth-child(14){
+    grid-area: fourteen;
+}
+div:nth-child(15){
+    grid-area: sixteen;
+}
+div:nth-child(16){
+    grid-area: fiveteen;
+}
+
+.number-container{
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.numbers{
+font-size: 40px;
+}
+
+
+.illustration{
+    width: 400px;
+    padding: 50px 80px;
+}
+
+#bg-top1{
+     background-image: url(./images/bg-section-top-desktop-1.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    height: 160px;
+}
+
+#bg-bot1{
+    background-image: url(./images/bg-section-bottom-desktop-1.svg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center top;
+   height: 160px;
+}
+
+#bg-top2{
+    background-image: url(./images/bg-section-top-desktop-2.svg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center top;
+   height: 160px;
+}
+
+#bg-bot2{
+    background-image: url(./images/bg-section-bottom-desktop-2.svg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center top;
+   height: 160px;
+}
+
+.bg-color{
+    background-color: hsl(207, 100%, 98%);
+}
+
+.text{
+    padding: 140px 100px;
+}
+
+
+#bg-ft{
+    background-image: url(./images/bg-footer-top-desktop.svg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center top;
+   height: 160px;
+}
+.footer{
+    background-color: hsl(192, 100%, 9%);
+    padding: 80px 70px;
+  
+}
+.footer p,
+.footer h2{
+    color: white;
+    width: 370px;
+}
+
+.contact{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    padding-top: 20px;
+}
+
+.footer button{
+    border-radius: 10px;
+}
+
+.footer input{
+    width: 300px;
+    height: 40px;
+    margin-right: 30px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    color: gray;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+@media (max-width: 950px){
+    
+    .intro p{
+        width: 360px;
+        text-align: center;
+        padding-top: 15px;
+    }
+    .intro h2{
+        width: 340px;
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .main-container{
+       text-align: center;
+        grid-auto-columns: 100%;
+        grid-template-areas: 
+        'one'' two' 'three'' three'
+        'four''five' 'six''seven'
+        'eight''nine' 'ten' 'eleven'
+        'twelve' 'thirteen''fourteen' 
+        'fiveteen''sixteen';
+    }
+
+    #bg-top1{
+        background-image: url(./images/bg-section-top-mobile-1.svg);
+        background-position: center bottom;
+        background-size: cover;
+        height: 30vw;
+    }
+    #bg-bot1{
+        background-image: url(./images/bg-section-bottom-mobile-1.svg);
+        background-position: center top;
+        height: 30vw;
+    }
+    #bg-top2{
+        background-image: url(./images/bg-section-top-mobile-2.svg);    
+        background-position: right bottom;
+        height: 30vw;
+    }
+    #bg-bot2{
+        background-image: url(./images/bg-section-bottom-mobile-2.svg);      
+        background-position: center top;
+        height: 30vw;
+    }
+    #bg-ft{
+        background-image: url(./images/bg-footer-top-mobile.svg);     
+        background-position: center bottom;
+        height: 30vw;
+    }
+
+    .text{
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .numbers{
+        text-align: center;
+    }
+
+    .number-container p{
+        font-size: 12px;
+    }
+
+    div:nth-child(4){
+        grid-area: four;
+    }
+    div:nth-child(5){
+        grid-area: five;
+    }
+    div:nth-child(10){
+        grid-area: ten;
+    }
+    div:nth-child(11){
+        grid-area: eleven;
+    }
+    div:nth-child(15){
+        grid-area: fiveteen;
+    }
+    div:nth-child(16){
+        grid-area: sixteen;
+    }
+
+    .footer{
+        text-align: left; 
+        font-size: 13px;
+        padding: 20px 25px;
+      
+    }
+}
